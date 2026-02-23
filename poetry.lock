@@ -4212,7 +4212,7 @@ optional = false
 python-versions = ">=3.10,<4"
 groups = ["main"]
 files = [
-    {file = "97f2ec6aca6067c1313349e1480c5143d96a22ce.zip", hash = "sha256:5bbfee596c6eebd455f303ca0dec18bc6f443c49f96d1e478b5b613a0ab7cdb7"},
+    {file = "8711e39064b9d4280499d878a9160c9f8197d311.zip", hash = "sha256:ead2d3885b6be4f88b3eb25eb3fa87ea1c4b7ae9bf4523b609407dbc0ffb091d"},
 ]
 
 [package.dependencies]
@@ -4240,7 +4240,7 @@ xmljson = "0.2.1"
 
 [package.source]
 type = "url"
-url = "https://github.com/HumanSignal/label-studio-sdk/archive/97f2ec6aca6067c1313349e1480c5143d96a22ce.zip"
+url = "https://github.com/HumanSignal/label-studio-sdk/archive/8711e39064b9d4280499d878a9160c9f8197d311.zip"
 
 [[package]]
 name = "lark"
@@ -9942,4 +9942,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<4"
-content-hash = "8a0e6dbfaaa56fd86dd39695ac78a3a125c6e398e29aa50955744130dd32dbf9"
+content-hash = "e71452796584fc65e09e9ce44872c1a0ac01f46c133456813b38bde0be10dd96"
