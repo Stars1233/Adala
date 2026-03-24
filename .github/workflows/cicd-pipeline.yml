@@ -60,18 +60,3 @@ jobs:
       sha: ${{ github.event.pull_request.head.sha || github.event.after }}
       branch_name: ${{ github.event.pull_request.head.ref || github.ref_name }}
     secrets: inherit
-
-  deploy:
-    name: "Deploy"
-    if: needs.details.outputs.membership && (github.event_name == 'push' || github.event.pull_request.draft == false)
-    uses: ./.github/workflows/argocd-deploy.yml
-    needs:
-      - details
-      - build
-    permissions:
-      contents: read
-      deployments: write
-    with:
-      release_name: "${{ needs.build.outputs.pretty_branch_name }}"
-      docker_image_version: "${{ needs.build.outputs.image_version }}"
-    secrets: inherit
